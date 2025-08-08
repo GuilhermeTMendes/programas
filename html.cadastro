@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Novos Usuários</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro de Usuário</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Nome completo -->
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Nome de usuário -->
+        <label for="usuario">Nome de usuário:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <br><br>
+
+        <!-- Senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+
+        <!-- Confirmar senha -->
+        <label for="confirmar_senha">Confirmar senha:</label>
+        <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+        <br><br>
+
+        <!-- Data de nascimento -->
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+        <br><br>
+
+        <!-- Telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <br><br>
+
+        <!-- Gênero -->
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="Masculino" required>
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="feminino" name="genero" value="Feminino">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" id="outro" name="genero" value="Outro">
+        <label for="outro">Outro</label>
+        <br><br>
+
+        <!-- Interesses -->
+        <label>Interesses:</label><br>
+        <input type="checkbox" id="tecnologia" name="interesses" value="Tecnologia">
+        <label for="tecnologia">Tecnologia</label><br>
+
+        <input type="checkbox" id="musica" name="interesses" value="Música">
+        <label for="musica">Música</label><br>
+
+        <input type="checkbox" id="esportes" name="interesses" value="Esportes">
+        <label for="esportes">Esportes</label><br>
+
+        <input type="checkbox" id="filmes" name="interesses" value="Filmes">
+        <label for="filmes">Filmes</label>
+        <br><br>
+
+        <!-- Estado -->
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione...</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="BA">Bahia</option>
+        </select>
+        <br><br>
+
+        <!-- Cidade -->
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+        <br><br>
+
+        <!-- Foto de perfil -->
+        <label for="foto">Foto de perfil:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required>
+        <br><br>
+
+        <!-- Mensagem de apresentação -->
+        <label for="mensagem">Mensagem de apresentação:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <!-- Botões -->
+        <button type="reset">Limpar</button>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
