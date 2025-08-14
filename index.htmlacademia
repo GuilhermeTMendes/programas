@@ -1,0 +1,271 @@
+[index.htmlacademiaaguaviva.html](https://github.com/user-attachments/files/21777093/index.htmlacademiaaguaviva.html)
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academia Água Viva</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Top Header com nome e boas-vindas */
+    .top-header {
+      background-color: #d90429; /* vermelho vibrante */
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 4px 8px rgba(217,4,41,0.6);
+      border-bottom: 4px solid #a3021f;
+    }
+
+    .top-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .top-header .welcome {
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    header img {
+      width: 100%;
+      display: block;
+    }
+
+    h1, h2 {
+      color: #d90429;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .banners {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .banners img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #d90429;
+    }
+
+    .section {
+      margin: 50px 0;
+      background-color: #111;
+      padding: 30px;
+      border-left: 5px solid #d90429;
+      border-radius: 10px;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    p, li {
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #d90429;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    button {
+      background-color: #d90429;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a3021f;
+    }
+
+    .footer-logo img {
+      width: 100%;
+      display: block;
+      margin-top: 50px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+      background-color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .banners {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topo com nome da academia e boas-vindas -->
+  <header>
+    <div class="top-header">
+      <h1>Academia Água Viva</h1>
+      <p class="welcome">Seja bem-vindo! Transforme seu corpo e sua vida conosco.</p>
+    </div>
+    
+  </header>
+
+  <div class="container">
+
+    <!-- Banners Motivacionais -->
+    <div class="banners">
+      <img src="c:\Users\ALUNO\Desktop\WhatsApp Image 2025-08-12 at 14.39.48 (2).jpeg" alt="Comece o dia sem desculpas" />
+      <img src="c:\Users\ALUNO\Desktop\WhatsApp Image 2025-08-12 at 14.39.48 (1).jpeg" alt="Seu corpo é reflexo do seu estilo de vida" />
+    </div>
+
+    <!-- Horários -->
+    <div class="section">
+      <h2>📅 Horários de Funcionamento</h2>
+      <ul>
+        <li><strong>Segunda a Sexta:</strong> 06h às 22h</li>
+        <li><strong>Sábado:</strong> 08h às 14h</li>
+        <li><strong>Domingo:</strong> Fechado</li>
+      </ul>
+    </div>
+
+    <!-- Endereço -->
+    <div class="section">
+      <h2>📍 Endereço e Contato</h2>
+      <p><strong>Endereço:</strong> Rua da Saúde, 123 - Centro, SuaCidade/SP</p>
+      <p><strong>Telefone:</strong> (11) 99999-9999</p>
+      <p><strong>Email:</strong> contato@aguavivaacademia.com.br</p>
+    </div>
+
+    <!-- Cadastro -->
+    <div class="section">
+      <h2>📨 Solicite seu Cadastro</h2>
+      <form>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="contato">E-mail ou telefone:</label>
+        <input type="text" id="contato" name="contato" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" placeholder="Qual plano deseja?"></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+      </form>
+    </div>
+
+    <!-- Dicas de Alimentação -->
+    <div class="section">
+      <h2>🥗 Dicas de Alimentação</h2>
+      <ul>
+        <li>Beba pelo menos 2L de água por dia</li>
+        <li>Prefira alimentos naturais e evite ultraprocessados</li>
+        <li>Consuma proteínas magras: frango, ovos, peixe</li>
+        <li>Evite jejum excessivo sem orientação profissional</li>
+        <li>Inclua vegetais e frutas em todas as refeições</li>
+      </ul>
+    </div>
+
+    <!-- Dicas de Treino -->
+    <div class="section">
+      <h2>💪 Dicas de Treino</h2>
+      <ul>
+        <li>Aqueça bem antes de iniciar os exercícios</li>
+        <li>Respeite os limites do seu corpo</li>
+        <li>Treine com regularidade (3 a 5x por semana)</li>
+        <li>Varie os treinos para estimular diferentes músculos</li>
+        <li>Durma bem para otimizar os resultados</li>
+      </ul>
+    </div>
+
+    <!-- Avaliação Física -->
+    <div class="section">
+      <h2>📝 Avaliação Física Corporal</h2>
+      <p>Agende sua avaliação gratuita com nossos profissionais!</p>
+      <form>
+        <label for="nome-avaliacao">Nome:</label>
+        <input type="text" id="nome-avaliacao" required />
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required />
+
+        <label for="objetivo">Objetivo:</label>
+        <select id="objetivo">
+          <option value="emagrecimento">Emagrecimento</option>
+          <option value="hipertrofia">Hipertrofia</option>
+          <option value="resistência">Resistência</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="mensagem-avaliacao">Observações:</label>
+        <textarea id="mensagem-avaliacao" rows="4"></textarea>
+
+        <button type="submit">Agendar Avaliação</button>
+      </form>
+    </div>
+
+    <!-- Logo no Rodapé -->
+    <div class="footer-logo">
+      <img src="c:\Users\ALUNO\Desktop\WhatsApp Image 2025-08-12 at 14.39.48.jpeg" alt="Logo Rodapé" />
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    © 2025 Academia Água Viva — Todos os direitos reservados
+  </footer>
+</body>
+</html>
